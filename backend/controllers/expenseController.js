@@ -5,7 +5,6 @@ const Expense = require("../models/Expense");
 // Add Expense Source
 exports.addExpense = async(req, res) => {
     const userId = req.user.id;
-
     try{
         const {icon, category, amount, date} = req.body;
 
